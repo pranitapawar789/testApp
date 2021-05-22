@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body,
+html {
+  font-family: 'Titillium Web', sans-serif;
+  color: #000;
+  height: 100%;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 10px;
+  border-color: #D0D0D0;
+}
+
+a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.heading {
+  font-size: 31px;
+  font-weight: bold;
+  color: #22B78E;
+}
+
+.hero-banner {
+  background-image: url("/images/Banner_mage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 35rem;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.hero-banner .logo {
+  margin: 50px 0 40px 0;
+}
+
+.hero-banner .heading {
+  color: #ffffff;
+  letter-spacing: 1.28px;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  color: #ffffff;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  letter-spacing: 3.59px;
+}
+
+.hero-banner a {
+  font-weight: lighter;
+  display: inline-block;
+  background-color: #DD5A6A;
+  border-radius: 3.2px;
+  padding: 10px 15px;
+}
+
+.form {
+  margin-top: 25px;
+  background-color: #ffffff;
+  padding: 30px 35px;
+}
+
+@media (min-width: 768px) {
+  .form {
+    height: 492px;
+  }
+}
+
+.form p {
+  letter-spacing: normal;
+  color: #213559;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form input {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 0.87px solid #D0D0D0;
+}
+
+.form a {
+  margin-top: 20px;
+}
+
+.bone-marrow-info {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.bone-marrow-info img {
+  height: 422px;
+}
+
+@media (max-width: 769px) {
+  .bone-marrow-info img {
+    width: inherit;
+  }
+}
+
+.bone-marrow-info .info-box {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2ec4b8), to(#6078ea));
+  background-image: linear-gradient(to right, #2ec4b8, #6078ea);
+  border-radius: 4px;
+  padding: 17px 20px;
+}
+
+.bone-marrow-info .info-steps p {
+  border-bottom: 1px solid #ECECFF;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  line-height: 20px;
+  color: #000000;
+  font-size: 17px;
+}
+
+.doctors-section {
+  margin-bottom: 45px;
+}
+
+@media (min-width: 769px) {
+  .doctors-section {
+    margin-bottom: 95px;
+  }
+}
+
+.doctors-section .heading {
+  margin-bottom: 35px;
+}
+
+.doctors-section .doc-tile {
+  background-color: #F9F9FF;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.doctors-section .doc-tile img {
+  margin-bottom: 25px;
+}
+
+.doctors-section .doc-tile h2 {
+  color: #22B78E;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.doctors-section .doc-tile h3 {
+  color: #1D5AA6;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.doctors-section .doc-tile a {
+  margin-bottom: 45px;
+  margin-top: 30px;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2ec4b8), to(#6078ea));
+  background-image: linear-gradient(to right, #2ec4b8, #6078ea);
+  border-radius: 4px;
+  padding: 17px 20px;
+}
+
+.doctors-section .doc-tile .doc-exp {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.doc-qualification {
+  font-size: 15px;
+  margin-bottom: 18px;
+  color: #1D5AA6;
+}
+
+.types-of-bone {
+  margin-bottom: 15px;
+}
+
+.types-of-bone .heading {
+  margin-bottom: 30px;
+  letter-spacing: 1.28px;
+}
+
+.types-of-bone span {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.types-of-bone ul {
+  list-style-image: url("/images/bullet.png");
+  list-style-position: inside;
+}
+
+.types-of-bone ul li {
+  margin-bottom: 10px;
+}
+
+.immune-deficiency {
+  margin-top: 45px;
+}
+
+.immune-deficiency .warning-tile {
+  border: 1px solid #E5EAFF;
+  padding: 20px 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .immune-deficiency .warning-tile {
+    margin-bottom: 20px;
+  }
+}
+
+.immune-deficiency .warning-tile p {
+  margin-top: 20px;
+}
+
+.accordion {
+  margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    margin-bottom: 85px;
+  }
+}
+
+.accordion img {
+  width: 10px;
+  height: 10px;
+}
+
+.accordion ul {
+  list-style-image: url("/images/tick.png");
+}
+
+.accordion ul li {
+  margin-bottom: 10px;
+}
+
+.accordion .accordion-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1D5AA6;
+  font-size: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ECECFF;
+  letter-spacing: 1.6px;
+  position: relative;
+}
+
+.accordion .accordion-toggle span.toggle-icon {
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  font-size: 1.5em;
+}
+
+.accordion .accordion-content {
+  display: none;
+  padding: 20px;
+  overflow: auto;
+}
+
+.testimonial .heading {
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  margin-bottom: 25px;
+}
+
+.testimonial .testimony-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial .testimony-name span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.testimonial .para {
+  margin-top: 30px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.testimonial .testimonial-tile {
+  padding: 40px 35px;
+  border-radius: 4px;
+  -webkit-box-shadow: 9px 8px 27px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 9px 8px 27px 0 rgba(0, 0, 0, 0.04);
+}
+
+.book-appointment {
+  margin: 0 auto;
+  border-radius: 3.8px;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #ffffff;
+  background-color: #004498;
+  padding: 15px 20px;
+}
+/*# sourceMappingURL=style.css.map */

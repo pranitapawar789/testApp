@@ -1,0 +1,311 @@
+// variables
+
+$white: #ffffff;
+$headingColor: #22B78E;
+$peach: #DD5A6A;
+$blue: #1D5AA6;
+$bggray: #F9F9FF;
+$border: #D0D0D0;
+$darkblue: #004498;
+
+// custom font
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;700&display=swap');
+
+// normalize css
+* {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a,  ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body,
+html {
+    font-family: 'Titillium Web', sans-serif;
+    color: #000;
+    height: 100%;
+    line-height: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// page css 
+
+textarea {
+    resize: none;
+    margin-bottom: 10px;
+    border-color: $border;
+}
+
+a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+    }
+}
+.heading {
+    font-size: 31px;
+    font-weight: bold;
+    color: $headingColor;
+}
+
+.hero-banner {
+    background-image: url("/images/Banner_mage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 35rem;
+    padding-bottom: 40px;
+    overflow: hidden;
+    .logo {
+        margin: 50px 0 40px 0;
+    }
+    .heading {
+        color: $white;
+        letter-spacing: 1.28px;
+        margin-bottom: 10px;
+    }
+    p {
+        color: $white;
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-weight: lighter;
+        letter-spacing: 3.59px;
+    }
+    a {
+        font-weight: lighter;
+        display: inline-block;
+        background-color: $peach;
+        border-radius: 3.2px;
+        padding: 10px 15px;
+    }
+}
+
+.form {
+    @media (min-width: 768px) {
+        height: 492px;
+    }
+    margin-top: 25px;
+    background-color: $white;
+    padding: 30px 35px;
+    p {
+        letter-spacing: normal;
+        color: #213559;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    input {
+        width: 100%;
+        display: block;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 0.87px solid $border;
+    }
+    a {
+        margin-top: 20px;
+    }
+}
+
+.bone-marrow-info {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    img {
+        @media  (max-width: 769px) {
+            width: inherit;
+        }
+        height: 422px;
+    }
+    .info-box {
+        color: $white;
+        font-weight: bold;
+        margin-bottom: 30px;
+        background-image: linear-gradient(to right,rgba(46, 196, 184, 1), rgba(96, 120, 234, 1));
+        border-radius: 4px;
+        padding: 17px 20px;
+    }
+    .info-steps {
+        p {
+            border-bottom: 1px solid #ECECFF;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            line-height: 20px;
+            color: #000000;
+            font-size: 17px;
+        }
+    }
+}
+
+.doctors-section {
+    margin-bottom: 45px;
+    @media (min-width: 769px) {
+        margin-bottom: 95px;
+    }
+    .heading {
+        margin-bottom: 35px;
+    }
+    .doc-tile {
+        background-color: $bggray;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        img {
+            margin-bottom: 25px;
+        }
+       
+        h2 {
+            color: $headingColor;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        h3 {
+            color: $blue;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        a {
+            margin-bottom: 45px;
+            margin-top: 30px;
+            display: inline-block;
+            background-image: linear-gradient(to right,rgba(46, 196, 184, 1), rgba(96, 120, 234, 1));
+            border-radius: 4px;
+            padding: 17px 20px;
+        }
+        .doc-exp {
+            font-size: 15px;
+            font-weight: lighter;
+        }
+    }
+}
+.doc-qualification {
+    font-size: 15px;
+    margin-bottom: 18px;
+    color: $blue;
+}
+
+.types-of-bone {
+    margin-bottom: 15px;
+    .heading {
+        margin-bottom: 30px;
+        letter-spacing: 1.28px;
+    }
+    span {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    ul {
+        list-style-image: url('/images/bullet.png');
+        list-style-position: inside;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.immune-deficiency {
+    margin-top: 45px;
+    .warning-tile {
+        border: 1px solid #E5EAFF;
+        padding: 20px 15px;
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+.accordion {
+    margin-bottom: 45px;
+    @media (min-width: 768px) {
+        margin-bottom: 85px;
+    }
+    img {
+        width: 10px;
+        height: 10px;
+    }
+    ul {
+        list-style-image: url('/images/tick.png');
+        li  {
+            margin-bottom: 10px;
+        }
+    }
+    .accordion-toggle {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        font-weight: bold;
+        color: $blue;
+        font-size: 20px;
+        padding: 15px 0;
+        border-bottom: 1px solid #ECECFF;
+        letter-spacing: 1.6px;
+        position: relative;
+    }
+    .accordion-toggle span.toggle-icon {
+        position: absolute;
+        top: 9px;
+        right: 20px;
+        font-size: 1.5em;
+    }
+    .accordion-content {
+        display: none;
+        padding: 20px;
+        overflow: auto;
+    }
+}
+
+.testimonial {
+    .heading {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    .testimony-name {
+        display: flex;
+        span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+    .para {
+        margin-top: 30px;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .testimonial-tile {
+        padding: 40px 35px;
+        border-radius: 4px;
+        box-shadow: 9px 8px 27px 0 rgba(0, 0, 0, 0.04);
+    }
+}
+
+.book-appointment {
+    margin: 0 auto;
+    border-radius: 3.8px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: $white;
+    background-color: $darkblue;
+    padding: 15px 20px;
+}
